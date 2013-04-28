@@ -44,7 +44,7 @@ class PdfGenerator
     kit = PDFKit.new(url)
     begin
       Timeout.timeout(120) do
-        Thread.new{ kit.to_file("tmp/#{SecureRandom.hex}.pdf")}.value
+        Thread.new{ kit.to_file("#{settings.root}/tmp/#{SecureRandom.hex}.pdf")}.value
       end
     rescue Timeout::Error => e
       false
@@ -52,7 +52,7 @@ class PdfGenerator
   end
 
   def self.generate_pdf_with_phantom(url)
-    pdf_path = "tmp/#{SecureRandom.hex}.pdf"
+    pdf_path = "#{settings.root}/tmp/#{SecureRandom.hex}.pdf"
     begin
       Timeout.timeout(20) do
         Thread.new{ `phantomjs lib/rasterize.js '#{url}' '#{pdf_path}'`}.value
