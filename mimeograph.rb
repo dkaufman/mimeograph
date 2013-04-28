@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sidekiq'
+require 'sidekiq-failures'
 require 'redis'
 require 'pdfkit'
 require 'rest_client'

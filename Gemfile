@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 gem 'sinatra'
 gem 'sidekiq'
+gem 'sidekiq-failures'
 gem 'slim'
 gem 'psych'
 gem 'pdfkit', '0.5.2'
