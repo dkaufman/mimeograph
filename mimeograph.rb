@@ -14,7 +14,7 @@ get '/ping' do
 end
 
 PDFKit.configure do |config|
-  config.wkhtmltopdf = root.join('bin', 'wkhtmltopdf-amd64').to_s if settings.production?
+  config.wkhtmltopdf = settings.root.join('bin', 'wkhtmltopdf-amd64').to_s if settings.production?
   config.default_options[:load_error_handling] = 'ignore'
 end
 
