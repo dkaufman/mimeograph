@@ -72,6 +72,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    wkhtmltopdf-heroku (1.0.0)
 
 PLATFORMS
   ruby
@@ -87,3 +88,4 @@ DEPENDENCIES
   sinatra
   slim
   unicorn
+  wkhtmltopdf-heroku

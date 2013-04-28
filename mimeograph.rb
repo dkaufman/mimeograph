@@ -5,6 +5,7 @@ require 'redis'
 require 'pdfkit'
 require 'rest_client'
 require 'fog'
+require 'wkhtmltopdf-heroku'
 
 post '/generate_pdf_from_url' do
   GeneratePdfFromUrl.perform_async(params["url"], params["callback_url"])
@@ -15,7 +16,6 @@ get '/ping' do
 end
 
 PDFKit.configure do |config|
-  config.wkhtmltopdf = [settings.root, 'bin', 'wkhtmltopdf-amd64'].join('/') if settings.production?
   config.default_options[:load_error_handling] = 'ignore'
 end
 
