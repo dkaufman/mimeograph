@@ -1,0 +1,23 @@
+# Temp Files #
+##############
+tmp/
+public/uploads/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+tmp/1b281ba69d9b773a34dfe2c7408359e6.pdf
+tmp/1e44b52341d630fe77fcbb08f7450214.pdf
+tmp/1eb96e9718be68ccf6fdc9b2820160a4.pdf
+tmp/409b60d4e95b7a745ec34e74aae1fd25.pdf
+tmp/6b07e655864f153d3e570f2bea874305.pdf
+tmp/d0f0676ff185152243c7e7897e0be581.pdf
+tmp/f12fbf883c34d023bddff4c721b63542.pdf
+tmp/tiger.pdf
